@@ -1,4 +1,9 @@
-// const prompt = require('prompt-sync')({sigint:true});
+//const prompt = require('prompt-sync')({sigint:true});
+
+// shift() retira do inicia
+// unshift() coloca no inicio
+// slice() coloca no meio do array
+// spalte() tira depois do indice indicado
 
 console.log('-----------Questao_1--------------')
 
@@ -20,5 +25,32 @@ do {
 } while (i < numerosI.length)
 
 console.log('-----------Questao_3--------------')
+
+//var pedidos = prompt('Digite o codigo do seu pedido: ')
+/*
+var cardapio = {100:{Cachorro_quente: 1.70}, 101:{Bauru_Simples:2.30}, 102:{Bauru_com_ovo:2.60},
+                103:{Hamburguer:2.40}, 104:{Cheeseburguer:2.50}, 105:{Refrigerante:1.00}}
+*/
+var lanches = [{100 : 1.70, 101: 2.30, 102: 2.60, 103: 2.40, 104: 2.50, 105: 1.00}]
+
+
+
+console.log('-----------Questao_4--------------')
+
+    var qcobaiasT = []
+    var codigoT = []
+
+for(i = 0; i < 15; i++){
+    var qcobaias = prompt('Quantida de cobaia(s) utilizada(s): ')
+    var codigo = prompt("Codigo Utilizado (1 ou 2): ")
+    qcobaiasT.push(qcobaias)
+    codigoT.push(codigo)
+}
+
+
+
+
+console.log('-----------Questao_5--------------')
+
 
 
