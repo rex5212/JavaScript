@@ -15,6 +15,16 @@ while(i < numerosP.length){
    i++
 }
 
+/*
+var numeros1 = []
+numero1.push(prompt('Digite os 20 numeros que serao selecionados: '))
+
+while(i < numeros1.length){
+    console.log(`numero ${numerosP[i]}`)
+    i++
+}
+*/ 
+
 console.log('-----------Questao_2--------------')
 
 var i = 0
@@ -37,20 +47,29 @@ var lanches = [{100 : 1.70, 101: 2.30, 102: 2.60, 103: 2.40, 104: 2.50, 105: 1.0
 
 console.log('-----------Questao_4--------------')
 
-    var qcobaiasT = []
+    var qcobaiasT = 0
     var codigoT = []
+    var r = 0
+    var c = 0
 
-for(i = 0; i < 15; i++){
-    var qcobaias = prompt('Quantida de cobaia(s) utilizada(s): ')
-    var codigo = prompt("Codigo Utilizado (1 ou 2): ")
-    qcobaiasT.push(qcobaias)
-    codigoT.push(codigo)
+for(i = 0; i < 3;){
+    var qcobaias = Number(prompt('Quantida de cobaia(s) utilizada(s): '))
+    var codigo = Number(prompt("Codigo Utilizado (1 sendo coelhos ou 2 sendo rato): "))
+    qcobaiasT = qcobaiasT + qcobaias
+    i++
+    if(codigo == 1){
+        console.log(`${qcobaias} Coelho(s) no ${[i]} teste`)
+        c++
+    }else if(codigo == 2){
+        console.log(`${qcobaias} Rato(s) no ${[i]} teste`)
+        r++
+    }
 }
 
-
-
+console.log(`O total de cobaias Utilizada foi: ${qcobaiasT}`)
+console.log(`O total de ratos foi ${r} e de Coelhos foi ${c}`)
 
 console.log('-----------Questao_5--------------')
 
-
+var numeros = (5)
 
