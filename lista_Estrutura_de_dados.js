@@ -38,12 +38,72 @@ console.log('-----------Questao_3--------------')
 
 //var pedidos = prompt('Digite o codigo do seu pedido: ')
 /*
-var cardapio = {100:{Cachorro_quente: 1.70}, 101:{Bauru_Simples:2.30}, 102:{Bauru_com_ovo:2.60},
-                103:{Hamburguer:2.40}, 104:{Cheeseburguer:2.50}, 105:{Refrigerante:1.00}}
+var cardapio = {
+  100:{Cachorro_quente: 1.70},
+  101:{Bauru_Simples:2.30},
+  102:{Bauru_com_ovo:2.60},
+  103:{Hamburguer:2.40},
+  104:{Cheeseburguer:2.50}, 
+  105:{Refrigerante:1.00}
+}
+
+var lanches = {100 : 1.70, 101: 2.30, 102: 2.60, 103: 2.40, 104: 2.50, 105: 1.00}
 */
-var lanches = [{100 : 1.70, 101: 2.30, 102: 2.60, 103: 2.40, 104: 2.50, 105: 1.00}]
+var precoT = 0
+var pedidos = 0
 
+while (true){
+var codigoL = prompt('digite o codigo do seu lanche: ')
 
+if(codigoL == 0){
+    console.log(`Seus ${pedidos} deram R$${precoT.toFixed(2)}`)
+    break
+} else {
+
+if(codigoL == 100){
+    let precoC = 1.7 
+    var pedidosQ = Number(prompt('Qual a quatidade de unidades do pedido: '))
+    console.log(`${pedidosQ} Cachoro-quente adicionado ao carrinho custando ${precoC}`)
+    pedidos = pedidos + pedidosQ  
+    precoT = precoT + (precoC * pedidosQ)
+}
+else if (codigoL == 101){
+    let precoBS = 2.3 
+    var pedidosQ = Number(prompt('Qual a quatidade de unidades do pedido: '))
+    console.log(`${pedidosQ} Bauru-Simples adicionado ao carrinho custando ${precoBS}`)
+    pedidos = pedidos + pedidosQ
+    precoT = precoT + (precoBS * pedidosQ)
+} 
+else if (codigoL == 102){
+    let precoBO = 2.6
+    var pedidosQ = Number(prompt('Qual a quatidade de unidades do pedido: '))
+    console.log(`${pedidosQ} Bauru com ovo adicionado ao carrinho custando ${precoBO}`)
+    pedidos = pedidos + pedidosQ
+    precoT = precoT + (precoBO * pedidosQ)
+} 
+else if (codigoL == 103){
+    let precoH = 2.4
+    var pedidosQ = Number(prompt('Qual a quatidade de unidades do pedido: '))
+    console.log(`${pedidosQ} Hamburguer adicionado ao carrinho custando ${precoH}`)
+    pedidos = pedidos + pedidosQ
+    precoT = precoT + (precoH * pedidosQ)
+} 
+else if (codigoL == 104){
+    let precoCH = 2.5
+    var pedidosQ = Number(prompt('Qual a quatidade de unidades do pedido: '))
+    console.log(`${pedidosQ} Cheeseburguer adicionado ao carrinho custando ${precoCH}`)
+    pedidos = pedidos + pedidosQ 
+    precoT = precoT + (precoCH * pedidosQ)
+} 
+else if (codigoL == 105){
+    let precoR = 1
+    var pedidosQ = Number(prompt('Qual a quatidade de unidades do pedido: '))
+    console.log(`${pedidosQ} Refrigerante adicionado ao carrinho custando ${precoR}`)
+    pedidos = pedidos + pedidosQ
+    precoT = precoT + (precoR * pedidosQ)
+} 
+}
+}
 
 console.log('-----------Questao_4--------------')
 
