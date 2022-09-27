@@ -113,7 +113,7 @@ console.log('-----------Questao_4--------------')
     var r = 0
     var c = 0
 
-for(i = 0; i < 2;){
+for(i = 0; i < 15;){
     var qcobaias = Number(prompt('Quantida de cobaia(s) utilizada(s): '))
     var codigo = Number(prompt("Codigo Utilizado (1 sendo coelhos ou 2 sendo rato): "))
     qcobaiasT = qcobaiasT + qcobaias
