@@ -35,20 +35,12 @@ para inserir elementos no topo de uma pilha (pode ser por meio de um array),
 // var array = prompt('valor que que adiciona: ')
 var array = ['Tables', 'Iphone']
 var pilha = ['Livro', 'Console', 'Computador']
-var npilha = []
 
-npilha = [array, pilha]
-
-console.log(npilha)
-
-/**
-  var array = ['Tables']
-var pilha = ['Livro', 'Console', 'Computador']
-var npilha = []
-
-pilha.length(i)
+for(i = 0; i < array.length; i++){
+    pilha[pilha.length] = array[i]
+}
 
 console.log(pilha)
- */
+
 
 
