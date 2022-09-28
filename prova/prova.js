@@ -41,6 +41,14 @@ npilha = [array, pilha]
 
 console.log(npilha)
 
+/**
+  var array = ['Tables']
+var pilha = ['Livro', 'Console', 'Computador']
+var npilha = []
 
+pilha.length(i)
+
+console.log(pilha)
+ */
 
 
