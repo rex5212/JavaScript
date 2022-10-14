@@ -21,46 +21,22 @@ console.log(calendario)
 
 // professor
 
-let mes = 0
-while(mes < 12){
+let mes = 1
+while(mes < 13){
 
     switch(mes){
-        case 1:
-            console.log('')
-            break
-        case 2:
-            console.log('')
-            break
-        case 3:
-            console.log('')
-            break
-        case 4:
-            console.log('')
-            break
-        case 5:
-            console.log('')
-            break
-        case 6:
-            console.log('')
-            break
-        case 7:
-            console.log('')
-            break
-        case 8:
-            console.log('')
-            break
-        case 9:
-            console.log('')
-            break
-        case 10:
-            console.log('')
-            break
-        case 11:
-            console.log('')
-            break
-        case 12:
-            console.log('')
-            break
+        case 1: console.log('Janeiro'); break
+        case 2: console.log('Fevereiro'); break
+        case 3: console.log('Março'); break
+        case 4: console.log('Abril'); break
+        case 5: console.log('Maio'); break
+        case 6: console.log('Junho'); break
+        case 7: console.log('Julho'); break
+        case 8: console.log('Agosto'); break
+        case 9: console.log('Setembro'); break
+        case 10: console.log('Outubro'); break
+        case 11: console.log('Novembro'); break
+        case 12: console.log('Dezembro'); break
     }
 
 
