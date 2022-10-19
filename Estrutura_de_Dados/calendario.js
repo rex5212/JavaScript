@@ -1,3 +1,29 @@
+
+const meses = ['Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho',
+'Agosto','Setembro','Outubro','Novembro','Dezembro']
+let i = 0
+var calendario = []
+
+while(i < meses.length){
+    console.log(meses[i])
+    console.log('D ', 'S ', 'T ', 'Q ', 'Q ', 'S ', 'S ')
+
+    
+        for(mes = 0; mes < 12; mes++){ //mes
+            calendario[mes] = []
+    
+            for(dia = 0; dia < 30; dia++){
+                
+                calendario[mes][dia] = 1 + dia
+            }
+        }
+    
+    
+
+
+    i++
+}
+
 /*
 var calendario = []
 
@@ -20,7 +46,7 @@ console.log(calendario)
 
 
 // professor
-
+/*
 let mes = 1
 while(mes < 13){
 
@@ -55,4 +81,4 @@ while(mes < 13){
 
 mes++
 }
-
+*/
