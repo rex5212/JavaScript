@@ -18,7 +18,7 @@ const prompt = require('prompt-sync')({sigint:true});
     console.log('seu resultado é', resutaldo)
 */
 
-var num = 1, media = 0, soma = 0, contador = 0
+var num , media = 0, soma = 0, contador = 0
 
   while (num != 0){
     num = prompt('coloque um valor: ')
