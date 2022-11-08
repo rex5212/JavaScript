@@ -63,15 +63,32 @@ class Queue {
         como o primeiro indice da classe Queue pode não ser zero, comecamos iterando a partir
         do indice LowestCount*/
 
-        if(this.isEmpty){
-            return ''
+        if (this.isEmpty()) {
+            return undefined
         }
         let objString = `${this.items[this.LowestCount]}`
-        for(let i = this.LowestCount + 1; i < this.count; i++){
+        for (let i = this.LowestCount + 1; i < this.count; i++) {
             objString = `${objString}, ${this.items[i]}`
         }
         return objString
     }
+
 }
 
+const fila = new Queue()
+console.log(fila.isEmpty())
+
+fila.enqueue('Jhon')
+fila.enqueue('Jack')
+console.log('A fila possui inicialmente as pessoas: ' + fila.toString())
+
+fila.enqueue('Camila')
+console.log('A fila agora possui as pessoas: ' + fila.toString())
+console.log('O tamanho da fila é: ' + fila.size())
+console.log('Removendo a pessoa da frente da fila: ' + fila.dequeue())
+console.log('A fila agora possui os elementos: ' + fila.toString())
+console.log('A pessoa da frente da fila agora é: ' + fila.peek())
+console.log('Retirando o próximo da fila: ' + fila.dequeue())
+console.log('A fila agora possui apenas: ' + fila.toString())
+console.log('A pessoa da frente da fila agora é: ' + fila.peek())
 
