@@ -24,13 +24,49 @@ console.log(conjuntoU)
 /** Favor implementar e postar aqui o código-fonte para um método em JavaScript, que apenas remova um elemento,
  *  do meio de uma lista duplamente encadeada, de forma imperativa, sem utilizar o comando delete (apenas ajustando seus ponteiros):*/
 
+
 let remove = 'Diogo'
-let lista = ['Renato', 'Diogo', 'João', 'Rick']
+let lista = ['Renato', 'João', 'Diogo', 'Hugo']
+let next = []
+let Stringnext = ''
+let back = []
+let Stringback = ''
 
 for (let i = 0; i < lista.length; i++){
-    if (remove == lista[i]){
-        lista[i] = lista[i + 1]
+    
+    if (lista[i] == lista.length - 1){
+        next[i] = null
+    } else {
+        next[i] = [lista[i + 1]]
     }
+    if (lista[i] == 0){
+        back[i] = null
+    } else {
+        back[i] = [lista[i - 1]]
+    }
+
+}
+
+for (let i = 0; i < lista.length; i++){
+    if (i == 0){
+        Stringnext += `${lista[i]} -> ${next[i]} -> `
+    } else {
+        Stringnext += ` ${next[i]} ->`
+    }
+}
+
+for (let i = 0; i < lista.length; i++){
+    if (i == 3){
+        Stringback += `<- ${back[i]} <- ${lista[i]}`
+    } else {
+        Stringback += `<- ${back[i]} `
+    }
+}
+
+console.log(`${Stringnext} \n ${Stringback}`)
+
+for (let i = 0; i < lista.length; i++){
+    
 }
 
 console.log(lista)
