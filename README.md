@@ -1,3 +1,2 @@
 # JavaScript
-
-Atualiza os nomes de todos os arquivos e melhorar/criar codigos para todos
+## Repositories with my JavaScript codes with some function and explanation for what i know about it and somes code

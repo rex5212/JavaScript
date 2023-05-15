@@ -1,0 +1,3 @@
+# Various codes with only basic function and uses for all programming language (or almost all)
+
+## This code will undergo improvements...
