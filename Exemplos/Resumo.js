@@ -1,12 +1,12 @@
-   (x) //vai se usado como exemplo, dei o nome de valor.
+  (x) //vai se usado como exemplo, dei o nome de valor.
 
-   const prompt = require('prompt-sync')({sigint:true}); //habilita o uso do prompt
+  const prompt = require('prompt-sync')({sigint:true}); //habilita o uso do prompt
 
-var //Significa variavel que o valor pode mudar ao longo do codigo
+  var x//Significa variavel que o valor pode mudar ao longo do codigo
 
- const //Significa constante que o valor não se altera ao longo docodigo
+  const y = 0//Significa constante que o valor não se altera ao longo docodigo
 
-  let // Se o valor for criado dentro do bloco so funcionar no mesmo
+  let z// Se o valor for criado dentro do bloco so funcionar no mesmo
 
 //Um bloco e oque esta entre chaves {}
 
